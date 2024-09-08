@@ -6,14 +6,15 @@ import clsx from 'clsx';
 import { isContactExist } from '../../helpers/isContactExist';
 import { toCapitalCase } from '../../helpers/toCapitalCase';
 import { nameToCapital } from '../../helpers/nameToCapital';
-import { addContact } from '../../redux/contacts/contactsOps';
-import { notify } from '../../redux/notification/notificationSlice';
-import { selectContacts } from '../../redux/contacts/selectors';
+import { addContact } from '../../redux/contactsOps';
+import { notify } from '../../redux/notificationSlice';
+
 import Button from '../Button/Button';
 import validSchema from '../../helpers/validationSchema';
 import FormMask from '../../helpers/FormMask';
 
 import styles from './ContactFrom.module.css';
+import { selectContacts } from '../../redux/selectors';
 
 const ContactForm = React.memo(() => {
   const contacts = useSelector(selectContacts);

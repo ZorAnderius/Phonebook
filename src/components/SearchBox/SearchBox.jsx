@@ -1,12 +1,10 @@
 import React, { useId } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import {
-    changeFilter,
-    selectNameFilter,
-} from '../../redux/filters/filtersSlice';
+import { changeFilter } from '../../redux/filtersSlice';
 
 import styles from './SearchBox.module.css';
+import { selectNameFilter } from '../../redux/selectors';
 
 const SearchBox = React.memo(() => {
   const searchId = useId();

@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { selectNameFilter } from '../../redux/filters/filtersSlice';
-import { selectFilteredContacts } from '../../redux/contacts/selectors';
+import { selectFilteredContacts, selectNameFilter } from '../../redux/selectors';
 import { message } from '../../helpers/searchMessage';
 import NotFound from '../NotFound/NotFound';
 import Contact from '../Contact/Contact';

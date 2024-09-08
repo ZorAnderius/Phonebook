@@ -2,7 +2,7 @@ export const handlePending = state => {
   state.loading = true;
 };
 
-export const handleFulfilled = (state, action) => {
+export const handleFulfilled = state => {
   state.loading = false;
   state.error = null;
 };

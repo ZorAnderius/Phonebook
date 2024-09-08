@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 
-import { addContact } from '../../redux/contacts/contactsOps';
+import { addContact } from '../../redux/contactsOps';
 import Button from '../Button/Button';
 
 import styles from './Undo.module.css';

@@ -1,11 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchContacts } from '../redux/contacts/contactsOps';
+import { fetchContacts } from '../redux/contactsOps';
 import { useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { selectNotify } from '../redux/notification/notificationSlice';
-import { selectError, selectLoading } from '../redux/contacts/selectors';
+import { selectError, selectLoading, selectNotify } from '../redux/selectors';
 import ContactList from './ContactList/ContactList';
 import ContactForm from './ContactForm/ContactForm';
 import Notification from './Notification/Notification';

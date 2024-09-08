@@ -1,5 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { selectNameFilter } from '../filters/filtersSlice';
+
+export const selectNameFilter = state => state.filters.name;
 
 export const selectContacts = state => state.contacts.items;
 export const selectLoading = state => state.contacts.loading;
@@ -14,3 +15,5 @@ export const selectFilteredContacts = createSelector(
       )
       .sort((a, b) => a.name.localeCompare(b.name))
 );
+
+export const selectNotify = state => state.notification;

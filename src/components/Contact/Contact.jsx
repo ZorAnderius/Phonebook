@@ -4,8 +4,8 @@ import { IoPersonSharp } from 'react-icons/io5';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 
-import { deleteContact } from '../../redux/contacts/contactsOps';
-import { notify } from '../../redux/notification/notificationSlice';
+import { deleteContact } from '../../redux/contactsOps';
+import { notify } from '../../redux/notificationSlice';
 import Button from '../Button/Button';
 import Undo from '../Undo/Undo';
 

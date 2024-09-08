@@ -1,7 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import initialState from '../initialState';
-
-export const selectNotify = state => state.notification;
+import initialState from './initialState';
 
 const notificationSlice = createSlice({
   name: 'notification',
