@@ -1,0 +1,9 @@
+.undoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strongTitle {
+  font-weight: 600;
+}
