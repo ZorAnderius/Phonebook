@@ -30,7 +30,6 @@ const ContactForm = React.memo(() => {
   );
 
   const fieldStyles = useCallback(({ field, value, touched, error }) => {
-    console.log(touched);
     return value
       ? error && error[field]
         ? styles.error
